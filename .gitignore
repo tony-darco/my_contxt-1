@@ -1,2 +1,4 @@
 .contxt1
-
+*.pdf
+chromadbcontxt1/
+__pycache__/
