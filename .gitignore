@@ -2,3 +2,4 @@
 *.pdf
 chromadbcontxt1/
 __pycache__/
+test*
