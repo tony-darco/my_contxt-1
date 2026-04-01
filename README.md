@@ -33,3 +33,13 @@ This is wired as a `StateGraph` in `main.py` with a conditional edge (`should_co
 - **`grep_search`** — Regex pattern matching across raw PDF pages
 
 The agent decides which tools to call (and how many times) based on the query — this is the core of the ReAct pattern.
+
+## Context Pruning
+
+As the agent loops, tool results accumulate in the message history. A `prune` node sits between `tools` and `agent` in the graph to keep context manageable:
+
+- After each tool execution, estimate the total token count of all tool messages (~`len / 4`)
+- If the total exceeds **6 000 tokens**, score every tool message against the original user query using cosine similarity of embeddings (one batch call to `mxbai-embed-large`, no extra LLM call)
+- Drop the **lowest-scoring 30%** of tool messages (and their orphaned AI tool-call messages) via `RemoveMessage`
+
+This keeps the most relevant retrieved content in context while staying within budget.
