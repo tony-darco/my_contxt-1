@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Explain how a partner could achieve a Cisco Preferred Partner designation and what additional requirement is needed for cross-portfolio specializations.",
+    "expected_answer": "A partner must achieve a value index of 7.5 or higher within a specific portfolio to earn the Cisco Preferred Partner designation. For cross-portfolio specializations, the partner must achieve a value index of 7.5 in all relevant portfolio value indexes.",
+    "source": "Partner Value Index Overview section (designation thresholds) :contentReference[oaicite:0]{index=0} and FAQ (Preferred Partner requirement) :contentReference[oaicite:1]{index=1}"
+  },
+  {
+    "question": "Describe how the Partner Value Index is calculated and explain how category and metric weightings interact in the calculation.",
+    "expected_answer": "The Partner Value Index is calculated as a weighted average of metrics across four categories: foundational, capabilities, performance, and engagement. Each category has a weight, and each metric within a category also has a weight. The overall contribution of a metric is calculated as Category Weight multiplied by Metric Weight, and the final index is the sum of all weighted metric values.",
+    "source": "Partner Value Index calculation explanation :contentReference[oaicite:2]{index=2} and FAQ explanation of weighted averages :contentReference[oaicite:3]{index=3}"
+  },
+  {
+    "question": "If a partner improves their certifications and customer success specialization before February 2026, explain how these investments impact both the current program and the Cisco 360 Partner Program.",
+    "expected_answer": "Investments made before February 2026 are protected and will contribute to the partner’s future value index. Certifications will count toward the capabilities category, while Customer Experience Specialization will count toward the foundational category. These investments help maintain current benefits and improve future value index scores.",
+    "source": "FAQ investment protection and transition details :contentReference[oaicite:4]{index=4}"
+  },
+  {
+    "question": "Explain how access to the Partner Experience Platform (PXP) is granted and why it is critical for managing the Partner Value Index and incentives.",
+    "expected_answer": "Access to PXP is granted by Partner Self Service (PSS) Administrators, with at least two administrators required to set it up. Once access is granted, users can view Partner Value Index and Cisco Partner Incentive dashboards. PXP is critical because it is the central platform for viewing metrics, managing Distributor Partner View, and accessing insights that drive growth and optimization.",
+    "source": "PXP access and importance description :contentReference[oaicite:5]{index=5}"
+  },
+  {
+    "question": "A partner has strong performance metrics but weak engagement metrics. How would this imbalance affect their overall Partner Value Index and potential benefits?",
+    "expected_answer": "Since the Partner Value Index is a weighted average across all four categories, weak engagement metrics (15% weight) would lower the overall score even if performance (35%) is strong. This could prevent the partner from reaching key thresholds (e.g., 7.5 for Preferred Partner), thereby limiting access to higher-tier benefits and incentives.",
+    "source": "Category weightings and index structure :contentReference[oaicite:6]{index=6}"
+  },
+  {
+    "question": "How does the qualification period determine a partner’s benefits, and how does the timing of value index improvements affect outcomes?",
+    "expected_answer": "The qualification period (proposed August 2025 to January 2026) tracks the partner’s value index monthly. The highest value index achieved during this period determines benefits and designation for the following 12 months. Improvements made during the period can immediately enhance benefits or designation in subsequent months.",
+    "source": "FAQ qualification period explanation :contentReference[oaicite:7]{index=7}"
+  },
+  {
+    "question": "Explain how the Black Belt certification metric is calculated and how it ties into a partner’s business performance.",
+    "expected_answer": "The Black Belt metric is calculated by dividing the number of certifications (from the past 36 months) by the partner’s bookings over the past 12 months divided by 100K. This ties certifications directly to business scale, ensuring that certification investment is proportional to revenue performance.",
+    "source": "Networking Value Index – Capabilities (Black Belt metric calculation) :contentReference[oaicite:8]{index=8}"
+  },
+  {
+    "question": "Why might a partner with declining ACV not lose points in the value index, and what does this imply about the scoring philosophy?",
+    "expected_answer": "If ACV declines, the partner does not lose points but instead earns a zero for that metric. This implies the scoring model avoids penalizing negative growth beyond zero and focuses on rewarding positive performance rather than deducting points.",
+    "source": "ACV growth metric explanation :contentReference[oaicite:9]{index=9}"
+  },
+  {
+    "question": "How do the four categories of the Partner Value Index align with Cisco’s broader goal of driving customer outcomes?",
+    "expected_answer": "The four categories—foundational, capabilities, performance, and engagement—collectively measure a partner’s ability to build practices, develop skills, grow business, and engage across the customer lifecycle. This aligns with Cisco’s goal of emphasizing customer outcomes by ensuring partners are evaluated holistically across these dimensions.",
+    "source": "Partner Value Index overview and program goals :contentReference[oaicite:10]{index=10} and :contentReference[oaicite:11]{index=11}"
+  },
+  {
+    "question": "Describe the relationship between Partner Value Index visibility, PXP access, and organizational roles such as PSS Administrator.",
+    "expected_answer": "The Partner Value Index is only visible within PXP and requires access granted by a PSS Administrator. Without this role assigning permissions, users cannot view dashboards or metrics. Therefore, organizational roles directly control visibility and access to performance data and incentives.",
+    "source": "PXP access control and visibility details :contentReference[oaicite:12]{index=12} and FAQ visibility explanation :contentReference[oaicite:13]{index=13}"
+  }
+]

@@ -1,0 +1,540 @@
+description: "Cisco 360 Partner Program RAG Agent Evaluation"
+
+providers:
+  - id: "python:provider.py"
+    label: "cisco360-rag-agent"
+    config:
+      timeoutMs: 300000
+
+prompts:
+  - "{{question}}"
+
+evaluateOptions:
+  maxConcurrency: 1
+
+tests:
+  - vars:
+      question: "Explain how a partner could achieve a Cisco Preferred Partner designation and what additional requirement is needed for cross-portfolio specializations."
+    assert:
+      - type: contains-any
+        value:
+          - "7.5"
+          - "value index"
+          - "Preferred Partner"
+
+  - vars:
+      question: "Describe how the Partner Value Index is calculated and explain how category and metric weightings interact in the calculation."
+    assert:
+      - type: contains-any
+        value:
+          - "weighted average"
+          - "foundational"
+          - "capabilities"
+          - "performance"
+          - "engagement"
+
+  - vars:
+      question: "If a partner improves their certifications and customer success specialization before February 2026, explain how these investments impact both the current program and the Cisco 360 Partner Program."
+    assert:
+      - type: contains-any
+        value:
+          - "protected"
+          - "capabilities"
+          - "foundational"
+          - "value index"
+
+  - vars:
+      question: "Explain how access to the Partner Experience Platform (PXP) is granted and why it is critical for managing the Partner Value Index and incentives."
+    assert:
+      - type: contains-any
+        value:
+          - "PXP"
+          - "PSS"
+          - "Administrator"
+          - "dashboard"
+
+  - vars:
+      question: "A partner has strong performance metrics but weak engagement metrics. How would this imbalance affect their overall Partner Value Index and potential benefits?"
+    assert:
+      - type: contains-any
+        value:
+          - "weighted"
+          - "engagement"
+          - "7.5"
+          - "performance"
+
+  - vars:
+      question: "How does the qualification period determine a partner's benefits, and how does the timing of value index improvements affect outcomes?"
+    assert:
+      - type: contains-any
+        value:
+          - "qualification period"
+          - "highest"
+          - "12 months"
+
+  - vars:
+      question: "Explain how the Black Belt certification metric is calculated and how it ties into a partner's business performance."
+    assert:
+      - type: contains-any
+        value:
+          - "Black Belt"
+          - "bookings"
+          - "100K"
+          - "certification"
+
+  - vars:
+      question: "Why might a partner with declining ACV not lose points in the value index, and what does this imply about the scoring philosophy?"
+    assert:
+      - type: contains-any
+        value:
+          - "zero"
+          - "ACV"
+          - "growth"
+
+  - vars:
+      question: "How do the four categories of the Partner Value Index align with Cisco's broader goal of driving customer outcomes?"
+    assert:
+      - type: contains-any
+        value:
+          - "customer"
+          - "outcomes"
+          - "lifecycle"
+
+  - vars:
+      question: "Describe the relationship between Partner Value Index visibility, PXP access, and organizational roles such as PSS Administrator."
+    assert:
+      - type: contains-any
+        value:
+          - "PXP"
+          - "PSS Administrator"
+          - "access"
+
+  - vars:
+      question: "How does achieving a high Managed Services Practice Maturity score influence both the Foundational category and overall Partner Value Index outcome?"
+    assert:
+      - type: contains-any
+        value:
+          - "Managed Services"
+          - "Foundational"
+          - "25%"
+          - "value index"
+
+  - vars:
+      question: "Explain how Customer Experience Specialization and Advanced Customer Experience Specialization differently impact the Partner Value Index."
+    assert:
+      - type: contains-any
+        value:
+          - "Customer Experience"
+          - "Specialization"
+          - "Foundational"
+          - "score"
+
+  - vars:
+      question: "How does the weighting of Performance metrics compare to Engagement metrics, and what strategic implication does this have for partners?"
+    assert:
+      - type: contains-any
+        value:
+          - "35%"
+          - "15%"
+          - "Performance"
+          - "Engagement"
+
+  - vars:
+      question: "If a partner has high certifications but low bookings, how does that affect the Black Belt certification metric?"
+    assert:
+      - type: contains-any
+        value:
+          - "Black Belt"
+          - "bookings"
+          - "100K"
+          - "ratio"
+
+  - vars:
+      question: "How does the Partner Value Index enable access to Cisco Partner Incentives and other benefits?"
+    assert:
+      - type: contains-any
+        value:
+          - "value index"
+          - "incentives"
+          - "benefits"
+          - "threshold"
+
+  - vars:
+      question: "Why is the Partner Experience Platform considered critical for optimizing partner performance in the Cisco 360 program?"
+    assert:
+      - type: contains-any
+        value:
+          - "PXP"
+          - "dashboard"
+          - "insights"
+          - "metrics"
+
+  - vars:
+      question: "How do lifecycle incentives contribute to the Engagement category of the Partner Value Index?"
+    assert:
+      - type: contains-any
+        value:
+          - "lifecycle"
+          - "onboarding"
+          - "adoption"
+          - "engagement"
+
+  - vars:
+      question: "Explain how Managed Services Penetration rate is calculated and why it is important."
+    assert:
+      - type: contains-any
+        value:
+          - "managed services"
+          - "bookings"
+          - "penetration"
+          - "channel"
+
+  - vars:
+      question: "What happens if a partner improves their value index mid-qualification period?"
+    assert:
+      - type: contains-any
+        value:
+          - "highest"
+          - "qualification"
+          - "benefits"
+          - "improve"
+
+  - vars:
+      question: "How does Buying Program Penetration influence the Performance category?"
+    assert:
+      - type: contains-any
+        value:
+          - "Buying Program"
+          - "software"
+          - "Performance"
+          - "30%"
+
+  - vars:
+      question: "Why is it important for partners to balance all four categories instead of focusing only on one?"
+    assert:
+      - type: contains-any
+        value:
+          - "weighted"
+          - "average"
+          - "balance"
+          - "threshold"
+
+  - vars:
+      question: "How do current Cisco certifications translate into the new Cisco 360 Partner Program?"
+    assert:
+      - type: contains-any
+        value:
+          - "certifications"
+          - "Capabilities"
+          - "carried"
+          - "transition"
+
+  - vars:
+      question: "Explain how ACV and TCV metrics differ and why both are included in the Performance category."
+    assert:
+      - type: contains-any
+        value:
+          - "ACV"
+          - "TCV"
+          - "recurring"
+          - "Performance"
+
+  - vars:
+      question: "How does the Partner Value Index support Cisco's goal of identifying high-performing partners?"
+    assert:
+      - type: contains-any
+        value:
+          - "value index"
+          - "outcome"
+          - "performance"
+          - "metrics"
+
+  - vars:
+      question: "What role do PSS Administrators play in enabling partner success in the Cisco 360 program?"
+    assert:
+      - type: contains-any
+        value:
+          - "PSS"
+          - "Administrator"
+          - "PXP"
+          - "access"
+
+  - vars:
+      question: "How does the value index change over time and how frequently is it updated?"
+    assert:
+      - type: contains-any
+        value:
+          - "daily"
+          - "updated"
+          - "track"
+          - "continuous"
+
+  - vars:
+      question: "Explain how engagement metrics ensure long-term customer success."
+    assert:
+      - type: contains-any
+        value:
+          - "onboarding"
+          - "adoption"
+          - "customer"
+          - "lifecycle"
+
+  - vars:
+      question: "How do partners unlock Deal Registration benefits within the value index framework?"
+    assert:
+      - type: contains-any
+        value:
+          - "Deal Registration"
+          - "1.0"
+          - "value index"
+          - "unlock"
+
+  - vars:
+      question: "What is the significance of the 0–10 scoring range in the Partner Value Index?"
+    assert:
+      - type: contains-any
+        value:
+          - "0"
+          - "10"
+          - "scoring"
+          - "weighted"
+
+  - vars:
+      question: "How does the Cisco 360 Partner Program differ from the previous Gold/Premier/Select model?"
+    assert:
+      - type: contains-any
+        value:
+          - "Certified"
+          - "Preferred"
+          - "value-based"
+          - "designation"
+
+  - vars:
+      question: "How does distributor access through DPV enhance partner performance optimization?"
+    assert:
+      - type: contains-any
+        value:
+          - "DPV"
+          - "distributor"
+          - "data"
+          - "performance"
+
+  - vars:
+      question: "Explain how career certifications contribute to Capabilities scoring."
+    assert:
+      - type: contains-any
+        value:
+          - "certifications"
+          - "Capabilities"
+          - "technical"
+          - "expertise"
+
+  - vars:
+      question: "Why does Cisco emphasize outcome-based metrics in the Partner Value Index?"
+    assert:
+      - type: contains-any
+        value:
+          - "outcome"
+          - "customer"
+          - "impact"
+          - "results"
+
+  - vars:
+      question: "How does the onboarding metric in Engagement relate to lifecycle incentives?"
+    assert:
+      - type: contains-any
+        value:
+          - "onboarding"
+          - "lifecycle"
+          - "incentive"
+          - "eligible"
+
+  - vars:
+      question: "What is the relationship between value index thresholds and partner branding?"
+    assert:
+      - type: contains-any
+        value:
+          - "Preferred"
+          - "branding"
+          - "designation"
+          - "threshold"
+
+  - vars:
+      question: "How does Cisco ensure fairness in value index calculations across portfolios?"
+    assert:
+      - type: contains-any
+        value:
+          - "portfolio"
+          - "weighting"
+          - "four"
+          - "consistency"
+
+  - vars:
+      question: "Why is it important that the value index is not publicly visible?"
+    assert:
+      - type: contains-any
+        value:
+          - "internal"
+          - "competitive"
+          - "visible"
+          - "sensitive"
+
+  - vars:
+      question: "How do partners improve their Engagement score beyond closing deals?"
+    assert:
+      - type: contains-any
+        value:
+          - "onboarding"
+          - "adoption"
+          - "lifecycle"
+          - "engagement"
+
+  - vars:
+      question: "Explain how a partner's global footprint might affect value index calculations."
+    assert:
+      - type: contains-any
+        value:
+          - "local"
+          - "GEO"
+          - "global"
+          - "organizational"
+
+  - vars:
+      question: "What is the significance of Black Belt training stages in the value index?"
+    assert:
+      - type: contains-any
+        value:
+          - "Black Belt"
+          - "stages"
+          - "Capabilities"
+          - "certification"
+
+  - vars:
+      question: "How does Cisco protect partner investments during the transition to the 360 program?"
+    assert:
+      - type: contains-any
+        value:
+          - "protected"
+          - "certifications"
+          - "specializations"
+          - "transition"
+
+  - vars:
+      question: "Why are both financial and non-financial benefits tied to the value index?"
+    assert:
+      - type: contains-any
+        value:
+          - "financial"
+          - "benefits"
+          - "performance"
+          - "reward"
+
+  - vars:
+      question: "How does the Partner Value Index encourage specialization across portfolios?"
+    assert:
+      - type: contains-any
+        value:
+          - "specialization"
+          - "portfolio"
+          - "cross-portfolio"
+          - "expertise"
+
+  - vars:
+      question: "What is the impact of onboarding delays on the Engagement score?"
+    assert:
+      - type: contains-any
+        value:
+          - "onboarding"
+          - "delays"
+          - "engagement"
+          - "lower"
+
+  - vars:
+      question: "How do AI and predictive insights in PXP support partner growth?"
+    assert:
+      - type: contains-any
+        value:
+          - "AI"
+          - "predictive"
+          - "PXP"
+          - "recommendations"
+
+  - vars:
+      question: "Explain how partners can strategically allocate resources to improve their value index."
+    assert:
+      - type: contains-any
+        value:
+          - "weighted"
+          - "metrics"
+          - "impact"
+          - "focus"
+
+  - vars:
+      question: "How does Cisco ensure continuous improvement through the value index model?"
+    assert:
+      - type: contains-any
+        value:
+          - "continuous"
+          - "updated"
+          - "improvement"
+          - "measurement"
+
+  - vars:
+      question: "What is the relationship between specialization and competitive differentiation?"
+    assert:
+      - type: contains-any
+        value:
+          - "specialization"
+          - "expertise"
+          - "differentiation"
+          - "market"
+
+  - vars:
+      question: "How does the Partner Value Index integrate with Cisco's broader ecosystem strategy?"
+    assert:
+      - type: contains-any
+        value:
+          - "ecosystem"
+          - "portfolio"
+          - "engagement"
+          - "strategy"
+
+  - vars:
+      question: "Why does Cisco include both adoption and onboarding in Engagement metrics?"
+    assert:
+      - type: contains-any
+        value:
+          - "adoption"
+          - "onboarding"
+          - "lifecycle"
+          - "customer"
+
+  - vars:
+      question: "How does the value index impact eligibility for Cisco Partner Incentive payouts?"
+    assert:
+      - type: contains-any
+        value:
+          - "value index"
+          - "eligibility"
+          - "incentive"
+          - "payout"
+
+  - vars:
+      question: "Explain how the Partner Value Index supports long-term partner growth strategies."
+    assert:
+      - type: contains-any
+        value:
+          - "growth"
+          - "incentive"
+          - "performance"
+          - "sustainable"
+
+  - vars:
+      question: "What role does transparency play in the Partner Value Index framework?"
+    assert:
+      - type: contains-any
+        value:
+          - "transparent"
+          - "metrics"
+          - "understand"
+          - "improve"

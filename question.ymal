@@ -1,0 +1,255 @@
+- question: "How does achieving a high Managed Services Practice Maturity score influence both the Foundational category and overall Partner Value Index outcome?"
+  expected_answer: >
+    Managed Services Practice Maturity contributes 50% of the Foundational category,
+    which itself is weighted at 25% of the overall index. A high score significantly
+    boosts the foundational score and therefore increases the overall value index.
+  source: "Foundational category weighting and Managed Services metric"
+
+- question: "Explain how Customer Experience Specialization and Advanced Customer Experience Specialization differently impact the Partner Value Index."
+  expected_answer: >
+    Customer Experience Specialization yields a score of 5, while Advanced Customer
+    Experience Specialization yields a score of 10 in the Customer Success Practice
+    Maturity metric, which is part of the Foundational category.
+  source: "Customer Success Practice Maturity scoring"
+
+- question: "How does the weighting of Performance metrics compare to Engagement metrics, and what strategic implication does this have for partners?"
+  expected_answer: >
+    Performance is weighted at 35% while Engagement is 15%, meaning improvements in
+    performance metrics have a larger impact on the overall index. Partners may
+    prioritize performance but must still maintain engagement to avoid limiting scores.
+  source: "Category weight distribution"
+
+- question: "If a partner has high certifications but low bookings, how does that affect the Black Belt certification metric?"
+  expected_answer: >
+    Since the metric divides certifications by bookings (scaled by 100K), low bookings
+    increase the ratio, potentially improving the metric score despite lower revenue.
+  source: "Black Belt certification formula"
+
+- question: "How does the Partner Value Index enable access to Cisco Partner Incentives and other benefits?"
+  expected_answer: >
+    The value index determines eligibility thresholds for benefits. As the index
+    increases, partners unlock incentives, branding, and other financial and
+    non-financial benefits.
+  source: "Partner Value Index benefits explanation"
+
+- question: "Why is the Partner Experience Platform considered critical for optimizing partner performance in the Cisco 360 program?"
+  expected_answer: >
+    PXP provides dashboards, insights, and tools that allow partners to monitor
+    metrics, identify growth opportunities, and optimize their value index and
+    incentives.
+  source: "PXP description and purpose"
+
+- question: "How do lifecycle incentives contribute to the Engagement category of the Partner Value Index?"
+  expected_answer: >
+    Lifecycle incentives measure deal onboarding and adoption success, contributing
+    to engagement metrics by tracking how effectively partners drive customer outcomes
+    after closing deals.
+  source: "Engagement metrics explanation"
+
+- question: "Explain how Managed Services Penetration rate is calculated and why it is important."
+  expected_answer: >
+    It is calculated as managed services bookings divided by total channel bookings.
+    It reflects how well a partner incorporates managed services into their business.
+  source: "Managed Services Penetration definition"
+
+- question: "What happens if a partner improves their value index mid-qualification period?"
+  expected_answer: >
+    The improved score can immediately enhance benefits or designation in the following
+    month, and the highest score during the period determines final benefits.
+  source: "FAQ qualification period dynamics"
+
+- question: "How does Buying Program Penetration influence the Performance category?"
+  expected_answer: >
+    It measures the proportion of software bookings through buying programs and
+    contributes 30% of the Performance category, impacting overall performance scoring.
+  source: "Buying Program Penetration metric"
+
+- question: "Why is it important for partners to balance all four categories instead of focusing only on one?"
+  expected_answer: >
+    Because the index is a weighted average, weakness in any category reduces the
+    overall score and may prevent reaching benefit thresholds.
+  source: "Weighted average explanation"
+
+- question: "How do current Cisco certifications translate into the new Cisco 360 Partner Program?"
+  expected_answer: >
+    Certifications are carried forward and contribute to the Capabilities category
+    in the value index.
+  source: "FAQ certification transition"
+
+- question: "Explain how ACV and TCV metrics differ and why both are included in the Performance category."
+  expected_answer: >
+    ACV measures recurring software bookings, while TCV includes total contract value
+    including hardware. Both provide a comprehensive view of growth and revenue.
+  source: "ACV and TCV definitions"
+
+- question: "How does the Partner Value Index support Cisco’s goal of identifying high-performing partners?"
+  expected_answer: >
+    It uses objective, outcome-based metrics to measure partner capabilities and
+    customer success, highlighting top-performing partners.
+  source: "Partner Value Index purpose"
+
+- question: "What role do PSS Administrators play in enabling partner success in the Cisco 360 program?"
+  expected_answer: >
+    They grant access to PXP and dashboards, enabling visibility into metrics and
+    tools required to manage performance and incentives.
+  source: "PXP access instructions"
+
+- question: "How does the value index change over time and how frequently is it updated?"
+  expected_answer: >
+    The value index is updated daily, allowing partners to continuously track and
+    improve their performance.
+  source: "FAQ update frequency"
+
+- question: "Explain how engagement metrics ensure long-term customer success."
+  expected_answer: >
+    Engagement metrics track onboarding and adoption, ensuring customers successfully
+    use solutions after purchase.
+  source: "Engagement category description"
+
+- question: "How do partners unlock Deal Registration benefits within the value index framework?"
+  expected_answer: >
+    Partners gain access to Deal Registration when their value index reaches at least 1.0.
+  source: "Value index thresholds"
+
+- question: "What is the significance of the 0–10 scoring range in the Partner Value Index?"
+  expected_answer: >
+    It standardizes metric evaluation and allows weighted aggregation across categories
+    to produce a consistent overall score.
+  source: "Index scoring explanation"
+
+- question: "How does the Cisco 360 Partner Program differ from the previous Gold/Premier/Select model?"
+  expected_answer: >
+    It replaces tiered levels with value-based designations (Certified and Preferred)
+    based on measurable outcomes and performance.
+  source: "FAQ program changes"
+
+- question: "How does distributor access through DPV enhance partner performance optimization?"
+  expected_answer: >
+    It allows distributors to analyze data and help partners improve metrics and
+    value index performance.
+  source: "DPV explanation"
+
+- question: "Explain how career certifications contribute to Capabilities scoring."
+  expected_answer: >
+    Career certifications are weighted within the Capabilities category and reflect
+    technical expertise across the sales lifecycle.
+  source: "Capabilities category description"
+
+- question: "Why does Cisco emphasize outcome-based metrics in the Partner Value Index?"
+  expected_answer: >
+    To ensure partners are evaluated based on real customer impact and business results
+    rather than static qualifications.
+  source: "Program philosophy"
+
+- question: "How does the onboarding metric in Engagement relate to lifecycle incentives?"
+  expected_answer: >
+    It measures the percentage of eligible deals successfully onboarded using lifecycle
+    incentive data.
+  source: "Engagement onboarding metric"
+
+- question: "What is the relationship between value index thresholds and partner branding?"
+  expected_answer: >
+    Higher value index scores unlock branding opportunities such as Preferred Partner
+    designation and customer-facing logos.
+  source: "Designation and benefits"
+
+- question: "How does Cisco ensure fairness in value index calculations across portfolios?"
+  expected_answer: >
+    Each portfolio has tailored weightings but follows the same four-category structure
+    for consistency.
+  source: "FAQ portfolio consistency"
+
+- question: "Why is it important that the value index is not publicly visible?"
+  expected_answer: >
+    It allows internal performance tracking without exposing sensitive competitive data.
+  source: "FAQ visibility"
+
+- question: "How do partners improve their Engagement score beyond closing deals?"
+  expected_answer: >
+    By ensuring onboarding, adoption, and lifecycle success of customer solutions.
+  source: "Engagement explanation"
+
+- question: "Explain how a partner’s global footprint might affect value index calculations."
+  expected_answer: >
+    Value indexes are calculated based on local performance and roll up to broader
+    organizational levels.
+  source: "FAQ GEO explanation"
+
+- question: "What is the significance of Black Belt training stages in the value index?"
+  expected_answer: >
+    Certifications from stages one through three contribute to the Capabilities metric.
+  source: "Black Belt metric details"
+
+- question: "How does Cisco protect partner investments during the transition to the 360 program?"
+  expected_answer: >
+    Existing certifications, specializations, and practices are carried into the value
+    index framework.
+  source: "FAQ investment protection"
+
+- question: "Why are both financial and non-financial benefits tied to the value index?"
+  expected_answer: >
+    To reward partners holistically for performance, growth, and customer outcomes.
+  source: "Benefits explanation"
+
+- question: "How does the Partner Value Index encourage specialization across portfolios?"
+  expected_answer: >
+    It rewards deep expertise within portfolios and enables cross-portfolio
+    specializations for high-performing partners.
+  source: "Value index specialization"
+
+- question: "What is the impact of onboarding delays on the Engagement score?"
+  expected_answer: >
+    Delays reduce onboarding percentages, lowering engagement scores and overall index.
+  source: "Engagement metrics"
+
+- question: "How do AI and predictive insights in PXP support partner growth?"
+  expected_answer: >
+    They provide actionable recommendations and identify opportunities to improve
+    performance and value index scores.
+  source: "PXP capabilities"
+
+- question: "Explain how partners can strategically allocate resources to improve their value index."
+  expected_answer: >
+    By analyzing weighted metrics and focusing on areas with higher impact on the
+    overall score.
+  source: "Weighted value explanation"
+
+- question: "How does Cisco ensure continuous improvement through the value index model?"
+  expected_answer: >
+    Frequent updates and ongoing measurement encourage partners to continuously
+    improve performance.
+  source: "FAQ update model"
+
+- question: "What is the relationship between specialization and competitive differentiation?"
+  expected_answer: >
+    Specializations signal deep expertise and help partners stand out in the market.
+  source: "Specialization benefits"
+
+- question: "How does the Partner Value Index integrate with Cisco’s broader ecosystem strategy?"
+  expected_answer: >
+    It measures engagement across the ecosystem and aligns partners with Cisco’s
+    portfolio strategies.
+  source: "Engagement and ecosystem"
+
+- question: "Why does Cisco include both adoption and onboarding in Engagement metrics?"
+  expected_answer: >
+    To ensure partners support customers through the full lifecycle, not just initial
+    sales.
+  source: "Engagement lifecycle focus"
+
+- question: "How does the value index impact eligibility for Cisco Partner Incentive payouts?"
+  expected_answer: >
+    Higher index scores unlock eligibility and increased access to incentive programs.
+  source: "Incentive eligibility"
+
+- question: "Explain how the Partner Value Index supports long-term partner growth strategies."
+  expected_answer: >
+    It aligns incentives, metrics, and performance tracking with sustainable business
+    growth and customer success.
+  source: "Program objectives"
+
+- question: "What role does transparency play in the Partner Value Index framework?"
+  expected_answer: >
+    Transparent metrics and calculations allow partners to clearly understand how to
+    improve their performance.
+  source: "Value index design principles"
