@@ -83,6 +83,7 @@ def should_continue(state: State) -> str:
 
 TOKEN_THRESHOLD = 6000
 PRUNE_RATIO = 0.30
+EMBED_MAX_CHARS = 1800  # ~450 tokens, safe for mxbai-embed-large 512 context
 
 
 def _estimate_tokens(text: str) -> int:
@@ -110,6 +111,7 @@ async def prune(state: State) -> dict:
 
     # Embed query + all tool message texts in one batch
     texts = [query] + [get_message_text(m) for m in tool_msgs]
+    texts = [t[:EMBED_MAX_CHARS] for t in texts]
     embeds = await _embeddings.aembed_documents(texts)
     query_vec = embeds[0]
 
